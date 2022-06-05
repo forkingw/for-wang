@@ -1,24 +1,25 @@
-import { Component } from 'react'
-import { View, Text } from '@tarojs/components'
-import './index.less'
+import { Component } from "react";
+import { View } from "@tarojs/components";
+import SignaturePad from "../../components/signaturePad/signaturePad"
+import "./index.less";
 
 export default class Index extends Component {
+  componentWillMount() {}
 
-  componentWillMount () { }
+  componentDidMount() {}
 
-  componentDidMount () { }
+  componentWillUnmount() {}
 
-  componentWillUnmount () { }
+  componentDidShow() {}
 
-  componentDidShow () { }
+  componentDidHide() {}
 
-  componentDidHide () { }
-
-  render () {
+  render() {
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className='signature'>
+        {/* <Signature className='signature-canvas' ref={signatureRef} /> */}
+        <SignaturePad></SignaturePad>
       </View>
-    )
+    );
   }
 }
